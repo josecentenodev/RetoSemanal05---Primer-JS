@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: PONER DESCRIPCION -->
+    <meta name="description" content="" />
+    <!-- TODO: PONER KEYWORDS -->
+    <meta name="keywords" content="" />
+    <meta name="author" content="Centeno José Antonio" />
+    <meta name="copyright" content="DevCito 2022" />
+    <!-- ROBOTS -->
+    <meta name="robots" content="index nofollow" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <!-- TODO: PONER TITLE -->
+    <meta property="og:title" content="" />
+    <!-- TODO: PONER DESCRIPCION -->
+    <meta property="og:description" content="" />
+    <!-- TODO: PONER TYPE -->
+    <meta property="og:type" content="" />
+    <!-- TODO: PONER IMAGEN -->
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://www.linkedin.com/in/jose-antonio-centeno-a379b61b6/" />
+    <!-- TODO: PONER TITLE -->
+    <meta property="twitter:title" content="" />
+    <!-- TODO: PONER DESCRIPCION -->
+    <meta property="twitter:description" content="" />
+    <!-- TODO: PONER TYPE -->
+    <meta property="twitter:type" content="" />
+    <!-- TODO: PONER IMAGEN -->
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:url" content="https://www.linkedin.com/in/jose-antonio-centeno-a379b61b6/" />
+    <!-- TODO: PONER TITLE DEL NAVEGADOR -->
+    <title>Lista de Deseos</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Encode+Sans+SC&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Deseos</h1>
+    </header>
+    <main>
+        <section>
+            <h2 id="sinCompras" class="off">¿Qué vamos a comprar hoy?</h2>
+            <div class="listaContenedor">
+                <ul class="listaCompras" id="listaCompras">
+                    <li class="listaCompraItem"><i class="fas fa-cheese"></i> CheeseCake <i class="fas fa-sort-down"></i></i></li>
+                </ul>
+            </div>
+            <div class="nuevaCompra off">
+                <form>
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                    <label for="icono">Ícono</label>
+                    <select name="icono" id="icono" required>
+                        <option value="fas fa-wine-bottle">Bebida</option>
+                        <option value="fas fa-cheese">Tortas</option>
+                        <option value="fas fa-apple-alt">Verduras</option>
+                        <option value="fas fa-drumstick-bite">Carnes</option>
+                    </select>
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion"></textarea>
+                    <input value="Agregar" type="submit" id="agregar">
+                </form>
+            </div>
+            <div class="sticky">
+                <button class="stickyButton" id="btnAgregar"><i class="fas fa-plus"></i></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Summerhack2022 - DevCito</p>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
