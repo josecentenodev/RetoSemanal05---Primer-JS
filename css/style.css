@@ -7,6 +7,8 @@ FONTS
 
 */
 
+/* TODO: CAMBIAR PALETA DE COLORES PORQUE DA OCOTE */
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -76,7 +78,7 @@ textarea {
 }
 
 input[type="submit"] {
-    margin-top: 10vh;
+    margin-top: 4vh;
 }
 
 
@@ -104,6 +106,7 @@ button {
 /* ITEMS DE LA LISTA */
 .listaCompras {
     padding: 0;
+    margin: 0;
 }
 
 .listaCompraItem {
@@ -117,6 +120,16 @@ button {
     margin: 0;
     font-size: larger;
     font-weight: 600;
+}
+
+.listaCompraItem:hover {
+background-color: rgb(1, 213, 195);
+}
+
+.listItemText {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 li i {

@@ -47,18 +47,16 @@
     </header>
     <main>
         <section>
-            <h2 id="sinCompras" class="off">¿Qué vamos a comprar hoy?</h2>
-            <div class="listaContenedor">
-                <ul class="listaCompras" id="listaCompras">
-                    <li class="listaCompraItem"><i class="fas fa-cheese"></i> CheeseCake <i class="fas fa-sort-down"></i></i></li>
+            <h2 id="sinCompras">¿Qué vamos a comprar hoy?</h2>
+                <ul class="listaCompras off" id="listaCompras">
                 </ul>
-            </div>
-            <div class="nuevaCompra off">
+            <div class="nuevaCompra off" id="nuevaCompra">
                 <form>
                     <label for="titulo">Título</label>
                     <input type="text" id="titulo" name="titulo" required>
-                    <label for="icono">Ícono</label>
+                    <label for="icono">Categoría</label>
                     <select name="icono" id="icono" required>
+                        <option value="" disabled selected>-- Selecciona una Categoría</option>
                         <option value="fas fa-wine-bottle">Bebida</option>
                         <option value="fas fa-cheese">Tortas</option>
                         <option value="fas fa-apple-alt">Verduras</option>
@@ -66,11 +64,11 @@
                     </select>
                     <label for="descripcion">Descripción</label>
                     <textarea name="descripcion" id="descripcion"></textarea>
-                    <input value="Agregar" type="submit" id="agregar">
+                    <input value="Agregar" type="submit" id="agregarItem">
                 </form>
             </div>
             <div class="sticky">
-                <button class="stickyButton" id="btnAgregar"><i class="fas fa-plus"></i></button>
+                <button class="stickyButton" id="btnMostrarForm"><i class="fas fa-plus"></i></button>
             </div>
         </section>
     </main>
