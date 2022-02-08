@@ -103,7 +103,7 @@ button {
     color: #FFF;
     position: absolute;
     bottom: 0;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 
 /* ITEMS DE LA LISTA */
@@ -183,4 +183,6 @@ footer {
     display: flex;
 }
 
-
+/* .opacity {
+    filter: brightness(0.4);
+} */
