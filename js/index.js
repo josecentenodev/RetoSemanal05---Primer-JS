@@ -34,6 +34,7 @@ function agregarItemList(e) {
         document.getElementById('titulo').value = ''
         document.getElementById('icono').value = ''
         document.getElementById('descripcion').value = ''
+        sinCompras.classList.add('off')
     }
     contadorId++
 }

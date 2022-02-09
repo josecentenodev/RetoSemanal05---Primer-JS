@@ -12,53 +12,66 @@ FONTS
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #B2DFDB;
+    background-color: #ffecb3;
     height: 100vh;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #424242;
     text-align: center;
 }
 
 /* HEADER */
 
 header {
-    background-color: #00796B;
+    background-color: #a1887f;
+    background-color: #a1887f;
+    background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+    -webkit-box-shadow: 0px 2px 2px 0px #212121; 
+    box-shadow: 0px 2px 2px 0px #212121;
 }
 /* Titulos */
 h1 {
     margin: 0;
     padding: 5vh;
     font-family: 'Encode Sans SC', sans-serif;
+    font-size: 40px;
 }
 
 h2 {
     color: #212121;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 /* FORMULARIO PARA AGREGAR ITEM */
 
 form {
+    font-weight: bolder;
+    font-size: 25px;
     text-align: left;
     position: absolute;
     left: 7%;
     top: 25vh;
     display: flex;
-    background-color: #009688;
+    background-color: #a1887f;
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
     border-radius: 5px;
     padding: 10px;
-    height: 50vh;
+    height: 60vh;
     box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.43);
     -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.43);
     -moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.43);
 }
 
+label {
+    margin-bottom: 10px;
+}
+
 input{
     border: none;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     outline: none;
 }
@@ -66,7 +79,7 @@ input{
 select {
     border: none;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     outline: none;
 }
@@ -88,22 +101,28 @@ input[type="submit"] {
 
 /* BOTON PARA AGREGAR ITEM */
 
-.sticky {
-    margin-top: 2vh;
-    display: flex;
-    justify-content: flex-end;
-}
-
 button {
-    margin-right: 30px;
-    border-radius: 50%;
-    border: none;
-    padding: 18px;
-    background-color: #E040FB;
-    color: #FFF;
+	font-size:25px;
+    color:#212121;
+	background-color:#ffff8d;
+	border-radius:5px;
+	border:1px solid #ffff00;
+	cursor:pointer;
+	padding:12px 25px;
+	text-shadow:0px 1px 0px #f9a825;
+    box-shadow: 3px 4px 5px 0px #212121;
     position: absolute;
-    bottom: 0;
-    margin-bottom: 25px;
+    bottom: 30px;
+    right: 30px;
+}
+button:hover {
+	background-color: #f9a825;
+    border:1px solid #f9a825;
+}
+button:active {
+    background-color: #ffff8d;
+    box-shadow: none;
+    border: none;
 }
 
 /* ITEMS DE LA LISTA */
