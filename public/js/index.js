@@ -1,12 +1,10 @@
-// EVENT LISTENERS
-
+// 
 const btnAgregarListener = document.getElementById('btnMostrarForm').addEventListener('click', mostrarForm)
 const agregarItemListener = document.getElementById('agregarItem').addEventListener('click', agregarItemList)
 const btnAgregar = document.getElementById('btnMostrarForm')
 const nuevaCompra = document.getElementById('nuevaCompra')
 const sinCompras = document.getElementById('sinCompras')
 const listaCompras = document.getElementById('listaCompras')
-
 let contadorId = 0
 
 function mostrarForm() {
@@ -25,6 +23,14 @@ function agregarItemList(e) {
         alert('Debe ingresar titulo y categoría de producto')
         return
     } else {
+        if (titulo.length > 30) {
+            alert('titulo demasiado largo, menos de 30 caracteres porfa')
+            return
+        }
+        if(descripcion.length > 100) {
+            alert('descripcion demasiado larga, menos de 100 caracteres si?')
+            return
+        }
         let newTitular = `<li class="listaCompraItem"><i class="${icono}"></i><p>${titulo}</p><i id="${id}" class="fas fa-chevron-down" onclick="showGladis(this.id)"></i><div class="descripciones off" id="div${id}"><i class="${icono}"></i><h3>${titulo}</h3><p>${descripcion}</p><i onclick="closeGladys(this.id)" id="close${id}" class="fas fa-times close"</i></div></li>`
         listaCompras.innerHTML += newTitular
         nuevaCompra.classList.add('off')
@@ -42,8 +48,6 @@ function agregarItemList(e) {
 function showGladis(id) {
     let itemToShow = document.getElementById('div'+id)
     itemToShow.classList.remove('off')
-    body.classList.add('opacity')
-    itemToShow.classList.add('brightness')
 }
 
 function closeGladys(id) {
