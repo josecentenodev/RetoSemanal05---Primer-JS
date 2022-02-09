@@ -42,6 +42,8 @@ function agregarItemList(e) {
 function showGladis(id) {
     let itemToShow = document.getElementById('div'+id)
     itemToShow.classList.remove('off')
+    body.classList.add('opacity')
+    itemToShow.classList.add('brightness')
 }
 
 function closeGladys(id) {

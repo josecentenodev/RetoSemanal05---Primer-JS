@@ -57,7 +57,7 @@ form {
     width: 80%;
     margin: 0 auto;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 20px;
     height: 60vh;
     box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.43);
     -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.43);
@@ -94,7 +94,18 @@ textarea {
 }
 
 input[type="submit"] {
-    margin-top: 4vh;
+    color:#212121;
+	background-color:#ffff8d;
+	border-radius:5px;
+	border:1px solid #ffff00;
+	cursor:pointer;
+	padding:12px 25px;
+	text-shadow:0px 1px 0px #f9a825;
+}
+
+input[type="submit"]:hover {
+    background-color: #f9a825;
+    border:1px solid #f9a825;
 }
 
 
@@ -137,7 +148,7 @@ button:active {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px #757575 solid;
+    border-bottom: 1px #212121 solid;
     padding: 15px 0;
     margin: 0;
     font-size: larger;
@@ -145,7 +156,7 @@ button:active {
 }
 
 .listaCompraItem:hover {
-background-color: rgb(1, 213, 195);
+background-color: #f9a825;
 }
 
 .listItemText {
@@ -156,7 +167,7 @@ background-color: rgb(1, 213, 195);
 
 li i {
     font-size: 30px;
-    color: #757575;
+    color: #212121;
 }
 
 /* EL POPUP DE LAS DESCRIPCIONES */
@@ -165,11 +176,13 @@ li i {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #BDBDBD;
+    background-color: #f9a825;
+    border: 1px solid #212121;
+    box-shadow: 3px 4px 5px 0px #212121;
     width: 70%;
     position: absolute;
     left: 7vw;
-    top: 20vh;
+    top: 25vh;
     border-radius: 5px;
     padding: 30px;
 }
@@ -181,8 +194,7 @@ li i {
 /* FOOTER */
 
 footer {
-    border-top: 1px solid #FFF;
-    font-weight: 600;
+    font-weight: 300;
     bottom: 0;
     position: fixed;
     text-align: center;
@@ -202,6 +214,31 @@ footer {
     display: flex;
 }
 
-/* .opacity {
-    filter: brightness(0.4);
-} */
+/* MEDIA Q */
+
+@media only screen and (min-width: 540px){
+    form {
+        width: 50vw;
+        left: 25%;
+    }
+    .descripciones {
+        width: 40vw;
+        left: 25%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    form {
+        width: 35vw;
+        left: 32%;
+    }
+    .descripciones {
+        width: 35vw;
+        left: 32%;
+    }
+    .listaCompras {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+}
